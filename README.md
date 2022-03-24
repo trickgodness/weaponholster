@@ -4,3 +4,12 @@
 Showcase : https://www.youtube.com/watch?v=fKFLqvC9dkI
 
 
+If you want big guns to appear behind you:
+
+> local playerPed = PlayerPedId()
+> 
+> local currentWeapon = GetSelectedPedWeapon(playerPed)
+> 
+> exports['weaponholster']:SilahAs(currentWeapon)
+
+Paste them under your own inventory weapon use event.
