@@ -192,7 +192,7 @@ Citizen.CreateThread(function()
 				if checkWeaponLarge(ped, newWeapon) then
 					if hasWeaponL then
 						holsterWeaponL(ped, currWeapon)
-					elseif ESX.PlayerData.job.name == 'police' then
+					elseif PlayerData.job.name == 'police' then
 						if hasWeapon then
 							if hasWeaponH then
 								holsterWeaponH(ped, currWeapon)
@@ -206,7 +206,7 @@ Citizen.CreateThread(function()
 						end
 					end
 					drawWeaponLarge(ped, newWeapon)
-				elseif ESX.PlayerData.job.name == 'police' then
+				elseif PlayerData.job.name == 'police' then
 					if hasWeaponL then
 						holsterWeaponL()
 					elseif hasWeaponH then
